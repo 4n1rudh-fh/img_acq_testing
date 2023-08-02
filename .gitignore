@@ -1,0 +1,6 @@
+# Directories to ignore
+\build
+\lib
+\images
+\timestamps
+\.vscode
