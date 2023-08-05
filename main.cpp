@@ -112,7 +112,7 @@ int main()
     /**************************************** END -> Get & Set the camera parameters *******************************************/
 
     std::string root_folder = "../images";
-    std::string param_folder_name = "Gain_" + std::to_string(int(0.00)) + "_ExposureTime_" + std::to_string(int(200));
+    std::string param_folder_name = "Gain_" + std::to_string(int(gain)) + "_ExposureTime_" + std::to_string(int(exposure_time));
     std::string movement_folder_name = "X03_Y03_TopRight";
     std::string experiment_folder_name = "Exp1"; 
 
