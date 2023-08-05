@@ -159,7 +159,7 @@ int main()
             }
 
             cv::Mat cvMat(frame_h, frame_w, CV_8UC1, pImage);
-            file_path = experiment_folder_name + "/frame_" + std::to_string(frame_count) + ".png";
+            file_path = testing_folder + "/frame_" + std::to_string(frame_count) + ".png";
             cv::imwrite(file_path, cvMat);
             cv::imshow("Frame Window (Press 'Enter' to quit)", cvMat);
 
