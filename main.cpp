@@ -67,7 +67,7 @@ int main()
     std::cout << "/// Exposure Time (Before)     :        " << exposure_time << " us" << std::endl;
 
     // Set Exposure Time
-    exposure_time = 200.0; // in microseconds
+    exposure_time = 510.0; // in microseconds
     cameras[0]->GetFeatureByName("ExposureTimeAbs", feature);
     feature->SetValue(exposure_time);
     std::cout << "/// Exposure Time (After)      :        " << exposure_time << " us" << std::endl;
@@ -114,7 +114,8 @@ int main()
     std::string root_folder = "../images";
     std::string param_folder_name = "Gain_" + std::to_string(int(gain)) + "_ExposureTime_" + std::to_string(int(exposure_time));
     std::string movement_folder_name = "X03_Y03_TopRight";
-    std::string experiment_folder_name = "Exp1"; 
+    // std::string movement_folder_name = "Calib_Y01";
+    std::string experiment_folder_name = "Exp_40"; 
 
     std::string testing_folder = root_folder + "/" + param_folder_name + "/" + movement_folder_name + "/" + experiment_folder_name;
     create_folders(testing_folder);
