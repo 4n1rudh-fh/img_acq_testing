@@ -78,7 +78,7 @@ int main()
     std::cout << "/// Gain (Before)              :        " << gain << std::endl;
 
     // Set Gain
-    gain = 0.0;
+    gain = 10.0;
     cameras[0]->GetFeatureByName("Gain", feature);
     feature->SetValue(gain);
     std::cout << "/// Gain (After)               :        " << gain << std::endl;
@@ -113,7 +113,7 @@ int main()
 
     std::string root_folder = "../images";
     std::string param_folder_name = "Gain_" + std::to_string(int(gain)) + "_ExposureTime_" + std::to_string(int(exposure_time));
-    std::string movement_folder_name = "X03_Y03_TopRight";
+    std::string movement_folder_name = "X03_Y03_BottomRight";
     // std::string movement_folder_name = "Calib_Y01";
     std::string experiment_folder_name = "Exp_40"; 
 
