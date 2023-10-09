@@ -2,5 +2,9 @@
 \build
 \lib
 \images
+\do_not_delete_images
+\laser_decorrelation_images
+\error_analysis_images
+\images_2
 \timestamps
 \.vscode
